@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #B2EBF2, #E1BEE7); /* Gradient from white to gray */
+    background: linear-gradient(to bottom, #B2EBF2, #E1BEE7); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@ body {
     justify-content: center;
     width: 80%;
     max-width: 1200px;
-    position: relative; /* For positioning the info box */
+    position: relative; 
 }
 .logo {
     position: absolute;
@@ -28,33 +28,33 @@ body {
 .image-container {
     position: relative;
     text-align: center;
-    margin-right: 20px; /* Space between image and text */
+    margin-right: 20px; 
 }
 
 .center-image {
-    width: 300px; /* Adjust size as needed */
+    width: 300px; 
     height: auto;
     border-radius: 8px;
 }
 
 .info-box {
     position: absolute;
-    left: -250px; /* Position to the left of the image */
+    left: -250px; 
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 10px;
     border-radius: 5px;
-    display: none; /* Initially hidden */
-    z-index: 1; /* Ensure it appears on top */
+    display: none; 
+    z-index: 1; 
 }
 
 .image-container:hover .info-box {
-    display: block; /* Show on hover */
+    display: block; 
 }
 
 .text-container {
-    max-width: 400px; /* Set a maximum width for text container */
+    max-width: 500px; 
 }
 
 .text-container h1 {
