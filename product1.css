@@ -32,6 +32,7 @@ body {
 }
 
 .center-image {
+    mix-blend-mode: multiply;
     width: 300px; /* Adjust size as needed */
     height: auto;
     border-radius: 8px;
