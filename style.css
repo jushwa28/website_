@@ -50,9 +50,12 @@ body {
 }
 
 .box-container {
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    
 }
 
 .box {
@@ -60,8 +63,10 @@ body {
     text-align: center;
     padding: 10px;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 28px;
     position: relative;
+    
+
 }
 
 .box img {
@@ -69,6 +74,7 @@ body {
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
+    
 }
 
 .box p {
