@@ -1,12 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #ffffff, #a8e6cf);
+    background: linear-gradient(to bottom, #B2EBF2, #E1BEE7); /* Gradient from white to gray */
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-
 .container {
     display: flex;
     align-items: center;
@@ -64,4 +63,14 @@ body {
 
 .text-container p {
     margin-top: 10px;
+}
+center-image {
+    width: 300px; 
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease; 
+}
+
+.image-container:hover .center-image {
+    transform: translateY(-10px); 
 }
