@@ -39,8 +39,8 @@ body {
 }
 
 .info-box {
-    position: absolute;
-    left: -100px; 
+    position: relative;
+    left: -250px; 
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 10px;
@@ -59,10 +59,12 @@ body {
 
 .text-container h1 {
     margin: 0;
+    font-size: 45px;
 }
 
 .text-container p {
     margin-top: 10px;
+    font-size: 30px;
 }
 center-image {
     width: 300px; 

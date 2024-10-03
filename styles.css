@@ -39,11 +39,13 @@ header {
 /* CSS for Credits Page */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #e0e0e0, #d3d3d3);
+    background: linear-gradient(to bottom, #B2EBF2, #E1BEE7); 
     text-align: center;
     margin: 0;
     padding: 0;
 }
+
+
 
 .credits-container {
     margin-top: 100px;

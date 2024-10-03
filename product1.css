@@ -60,10 +60,12 @@ body {
 
 .text-container h1 {
     margin: 0;
+    font-size: 45px;
 }
 
 .text-container p {
     margin-top: 10px;
+    font-size: 30px;
 }
 center-image {
     width: 300px; 
@@ -75,3 +77,4 @@ center-image {
 .image-container:hover .center-image {
     transform: translateY(-5px); 
 }
+
