@@ -1,52 +1,122 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Website with Logo, Search Bar, and Boxes with Clickable Images</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Organix</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <a href="introduction.html">
-                <img src="cutieelogo.jpg" alt="Logo" class="logo-img">
-            </a>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Luxe Organix Logo" class="logo">
         </div>
-        <div class="container">
-            <header>
-                
-                <h1 class="title" center>Luxe Organix</h1>
-                <p class="subtitle" center>Elevate your everyday beauty routine with nature's finest active ingredients, where radiant skin meets luxurious self-care transform your rituals into moments of pure indulgence.</p>
-            </header>
-        </div>
-        <div class="box-container">
-            <div class="box">
-                <a href="product1.html">
-                    <img src="cleanser.jpg" alt="Image 1">
-                    <p class="label">cleanser</p>
-                </a>
-            </div>
-            <div class="box">
-                <a href="product2.html">
-                    <img src="toner.jpg" alt="Image 2">
-                    <p class="label">Toner</p>
-                </a>
-            </div>
-            <div class="box">
-                <a href="product3.html">
-                    <img src="serum.jpg" alt="Image 3">
-                    <p class="label">serum</p>
-                </a>
-            </div>
-            <div class="box">
-                <a href="product4.html">
-                    <img src="gel.jpg" alt="Image 4">
-                    <p class="moisturizer">Toner</p>
-                </a>
-            </div>
-            </div>
+        <div class="nav-links">
+            <a href="#video-section" id="home-btn">Home</a> <!-- Scroll to the video section -->
+            <a href="#about" id="info-btn">Info</a>
         </div>
     </div>
-    <div class="button-container">
-        <button class="done-button" onclick="window.location.href='credits.html'">Done</button>
+
+    <!-- Hero Section: Videos -->
+    <section class="videos-section">
+        <div class="videos-container">
+            <div class="video">
+                <video src="video1.mp4" controls></video>
+            </div>
+            <div class="video">
+                <video src="video2.mp4" controls></video>
+            </div>
+            <div class="video">
+                <video src="video3.mp4" controls></video>
+            </div>
+            <div class="video">
+                <video src="video4.mp4" controls></video>
+            </div>
+        </div>
+    </section>
+    <!-- First Section (The Home Section) -->
+
+    <section id="home" class="home-section">
+    <h1>Welcome to Luxe Organix</h1>
+    <p>Your beauty starts here!</p>
+</section>
+
+    <!-- Products: First Two -->
+    <section class="products-section">
+        <div class="product">
+            <img src="cleanser.jpg" alt="Cleanser" class="product-image">
+            <h3 class="product-name">Cleanser</h3>
+            <p class="product-info">A gentle, effective cleanser for all skin types.</p>
+        </div>
+        <div class="product">
+            <img src="toner.jpg" alt="Toner" class="product-image">
+            <h3 class="product-name">Toner</h3>
+            <p class="product-info">Refresh and tone your skin with natural ingredients.</p>
+        </div>
+    </section>
+
+    <!-- What's Inside Section -->
+    <section class="whats-inside">
+        <h2>What's Inside This Product?</h2>
+        <button class="check-button" onclick="window.location.href='detailed-info.html'">Check Details</button>
+    </section>
+
+    <!-- Products: Last Two -->
+    <section class="products-section">
+        <div class="product">
+            <img src="serum.jpg" alt="Serum" class="product-image">
+            <h3 class="product-name">Serum</h3>
+            <p class="product-info">Hydrate and repair with our lightweight serum.</p>
+        </div>
+        <div class="product">
+            <img src="gel.jpg" alt="Moisturizer" class="product-image">
+            <h3 class="product-name">Moisturizer</h3>
+            <p class="product-info">Lock in moisture for smooth, radiant skin.</p>
+        </div>
+    </section>
+
+    <!-- References and Feedback -->
+    <section class="references">
+        <h2>References</h2>
+        <div class="icons">
+            <a href="#"><img src="icon1.png" alt="Icon 1"></a>
+            <a href="#"><img src="icon2.png" alt="Icon 2"></a>
+            <a href="#"><img src="icon3.png" alt="Icon 3"></a>
+        </div>
+    </section>
+    <div class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Luxe Organix Logo" class="logo">
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <button id="info-btn">Info</button>
+        </div>
     </div>
+    
+    <!-- Modal Structure -->
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>About Luxe Organix</h2>
+            <p>
+                Welcome to Luxe Organix! Our website is dedicated to showcasing top-notch skincare products 
+                designed to elevate your daily beauty routine. Explore our premium range, learn about our 
+                ingredients, and discover what makes Luxe Organix stand out. Your beauty journey starts here!
+            </p>
+        </div>
+        <!-- Navigation Bar -->
+<div class="navbar">
+    <div class="logo-container">
+        <img src="logo.png" alt="Luxe Organix Logo" class="logo">
+    </div>
+    <div class="nav-links">
+        <a href="#home" id="home-btn">Home</a>  <!-- Scroll to top when clicked -->
+        <a href="#about" id="info-btn">Info</a>
+    </div>
+</div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
