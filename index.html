@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design_index.css">
+    <title>Luxe Orgnix</title>
+</head>
+<body>
+
+    <script>
+    function handleFeedbackClick() {
+    var feedback = confirm("Are you satisfied?");
+    Feedback(feedback);
+    }
+        function Feedback (feedback) {
+        if (feedback == true) {
+            alert("Thank you!");
+        } else {
+            alert ("Thanks for visiting!");
+        }
+        }
+    </script>
+
+<!-- NAVIGATION -->
+    <div class="nav">
+                <ul class="navBar">
+                    <li id="logo">LOGO</li>
+                    <li id="title">Luxe Organix</li>
+                    <li id="home"><a href="index.html"><img src="home.png" alt="home" height="27px" width="25px"></a> </li>
+                    <li id="aboutUs"><a href="aboutUs.html"><img src="information.png" alt="about us" height="27px" width="25px"></a> </li>
+                </ul>
+    </div> 
+
+<!-- VIDEOS -->
+    <center>
+    <div class="MainVid">
+        <video id="video" loop autoplay muted playsinline>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>  
+    </center>
+
+<!-- 2ND SECTION -->
+<div class="secondSection">
+    <p class="subtitle" center>Elevate your everyday beauty routine with nature's finest active ingredients, where radiant skin meets luxurious self-care transform your rituals into moments of pure indulgence.</p>
+    <div class="box-container">
+            <div class="box">
+                <a href="cleanser.html">
+                    <img src="cleanser.jpg" alt="Image 1">
+                    <p class="label">cleanser</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="toner.html">
+                    <img src="toner.jpg" alt="Image 2">
+                    <p class="label">Toner</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="serum.html">
+                    <img src="serum.jpg" alt="Image 3">
+                    <p class="label">serum</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="moisturizer.html">
+                    <img src="gel.jpg" alt="Image 4">
+                    <p class="moisturizer">moisturizer</p>
+                </a>
+            </div>
+            </div>
+        </div>
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+    <div class="lineOne">
+    <h1 class="footer-title">Luxe Organix</h1> 
+    <a class="feedback" onclick="handleFeedbackClick()">Feedback</p>
+    </div>
+    <div class="social-icons">
+        <a href="link" target="_blank">
+            <img src="facebook.png" alt="Facebook" width="35px" height="35px">
+        </a>
+        <a href="link" target="_blank">
+            <img src="instagram.png" alt="Instagram" width="35px" height="35px">
+        </a>
+        <a href="link" target="_blank">
+            <img src="tiktok.png" alt="TikTok" width="35px" height="35px">
+        </a>
+    </div>
+</div>
+</body>
+</html>
