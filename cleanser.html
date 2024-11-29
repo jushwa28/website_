@@ -4,66 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cleanser.css">
-    <title>Document</title>
+    <title>Cleanser - Luxe Organix</title>
 </head>
 <body>
 <script src="script.js"></script>
 
 <!-- NAVIGATION -->
     <div class="nav">
-                <ul class="navBar">
-                    <li id="logo">LOGO</li>
-                    <li id="title">Luxe Organix</li>
-                    <li id="home"><a href="index.html"><img src="home.png" alt="home" height="27px" width="25px"></a> </li>
-                    <li id="aboutUs"><a href="aboutUs.html"><img src="information.png" alt="about us" height="27px" width="25px"></a> </li>
-                </ul>
+        <ul class="navBar">
+            <li id="logo">LOGO</li>
+            <li id="title">Luxe Organix</li>
+            <li id="home"><a href="index.html"><img src="home.png" alt="home" height="27px" width="25px"></a></li>
+            <li id="aboutUs"><a href="aboutUs.html"><img src="information.png" alt="about us" height="27px" width="25px"></a></li>
+        </ul>
     </div> 
 
-<!-- PRODUCT 1 PICTURES -->
-
-<table><tr>
-    <th>
-        <div class="images">    
-            <div>
-                <img ID="slider" SRC="cleanser.jpg">
+<!-- PRODUCT 1 SECTION -->
+<table>
+    <tr>
+        <th>
+            <div class="images">
+                <img id="slider" src="cleanser.jpg" alt="Product Image">
             </div>
-            <DIV>
-            <BUTTON ONCLICK="prev()"> Prev </BUTTON>
-            <BUTTON ONCLICK="next()"> Next </BUTTON>
-            </DIV>
+            <p class="guide">Click the image to swap!</p>            
+        </th> 
+        <th>
+            <div class="product1">
+
+                <!-- NAME -->
+                <h1 class="title">Cleanser</h1>
+
+                <!-- GET BUTTON -->
+                <button type="submit" id="getBtn">Get</button>
+
+                <!-- DETAILS -->
+                <div class="details">
+                    <p id="description">
+                        Luxe Organix Power Glow Creamy Whip Cleanser cleanses the face without the stripping feeling. <br>
+                        Developed with Galactomyces Ferment Filtrate and Vitamin C to reduce signs of aging. <br>
+                        It promotes a brighter complexion by reducing impurities and increasing collagen production, revealing a healthier glow. <br>
+                    </p>
+                    <h3>How To Use</h3>
+                    <p>
+                        Squeeze a pea-sized amount onto hands, gently massage into a damp face in circular motions, avoiding the eye area.
+                        Rinse thoroughly with water.
+                    </p>
+                    <h3>Ingredients</h3>
+                    <p>
+                        Water, Glycerin, Palmitic Acid, Stearic Acid, Myristic Acid, Potassium Hydroxide, Lauric Acid, Cocamidopropyl Betaine, 
+                        Sorbitan Olivate, Cocamide MEA, Allantoin, Butylene Glycol, Sodium Chloride, Disodium EDTA, Capric Acid, Glyceryl Stearate, 
+                        PEG-100 Stearate, PEG-20M, Silica BHT, Galactomyces Ferment Filtrate, Ascorbic Acid, Caprylyl Glycol, Hydroxyacetophenone, 
+                        Pentylene Glycol, 1,2-Hexanediol, Fragrance.
+                    </p>
+                </div>
             </div>
-        </div>
-    <th> 
-        <div class="ptoduct1">
-
-            <!-- NAME -->
-            <h1 class="title">Cleanser</h1>
-
-            <!-- GET BUTTON -->
-            <button type="submit" id="getBtn">Get</button>
-
-            <div class="details">
-                <p id="description">
-                    Luxe Organix Power Glow Creamy Whip Cleanser cleanses face without the stripping feeling.  <br>
-                    Developed with Galactomyces Ferment Filtrate and Vitamin C to reduce signs of aging. <br>
-                     It promotes a brighter complexion by reducing impurities and increasing collagen production, revealing a healthier glow. <br>
-                </p>
-                <br>
-                <h3> How To Use </h3>
-                <p> Squeeze a pea sized amount onto hands, gently massage into damp face in circular motions, avoiding the eye area.
-                     Rinse thoroughly with water.  </p>
-                     
-                     <br>
-                <h3>Ingredients</h3>
-                <p> Water, Glycerin, Palmitic Acid, Stearic Acid, Myristic Acid, Potassium Hydroxide, Lauric Acid, Cocamidopropyl Betaine, <br>
-                     Sorbitan Olivate, Cocamde MEA, Allantoin, Butylene Glycol, Sodium Chloride, Disodium EDTA, Capric Acid, Glyceryl Stearate, <br>
-                      PEG-100 Stearate, PEG-20M, Silica BHT, Galactomyces Ferment Filtrate, Ascorbic Acid, Caprylyl Glycol, Hydroxyace-tophenone, <br>
-                       Pentylene Glycol, 1,2-Hexanediol, Fragrance</p> <br>
-                
-            </div>
-            
-    </th>   
-</tr></table> 
+        </th>   
+    </tr>
+</table> 
 
 </body>
 </html>
