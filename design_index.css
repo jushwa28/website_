@@ -16,24 +16,86 @@ body {
     margin-right: 500px;
 }
 
-.navBar {
-    list-style-type: none;
-    margin: 0;
-    margin-top: -18px;
-    height: 60px;
-    padding-top: 40px;
-    align-items: center;
-}
-
+/* NAVIGATION */
 .nav {
     position: fixed;
     width: 100%;
-    background-color:  #EEEEEE;
+    background-color: #EEEEEE;
     z-index: 2;
-} 
+    top: 0; /* Fix it to the top of the page */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds shadow for a 3D effect */
+}
 
-li {
+.navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+    align-items: center;
+}
+
+.navBar li {
     display: inline;
+    margin-right: 15px; /* Space between items */
+}
+
+/* Logo Styling */
+#logo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+#title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    color: black;
+    text-align: center;
+    flex: 1; /* Ensure the title takes space in between the logo and navigation items */
+}
+
+/* ICONS (Home & About Us) */
+#home, #aboutUs {
+    margin-right: 15px;
+}
+
+#home img, #aboutUs img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Navigation links */
+.navBar li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Hover effect for navigation items */
+.navBar li a:hover {
+    background-color: #D6D6D6;
+    border-radius: 5px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .navBar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #title {
+        margin-left: 0;
+        font-size: 28px;
+    }
+
+    .navBar li {
+        margin-bottom: 10px; /* Adds space between items on smaller screens */
+    }
 }
 
 /* ICON */
@@ -139,3 +201,117 @@ li {
 .footer-title {
     margin-left: 108px;
 }
+/* Floating logo styling */
+.floating-logo {
+    position: fixed; /* Keeps it in place while scrolling */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+.floating-logo img {
+    width: 60px; /* Adjust logo size */
+    height: auto;
+    border-radius: 50%; /* Optional: make the logo circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for better visibility */
+    transition: transform 0.3s ease;
+}
+
+.floating-logo img:hover {
+    transform: scale(1.1); /* Slight zoom on hover for interactivity */
+}
+/* Styling for the highlighted text */
+.highlighted-text {
+    font-family: 'Georgia', serif; /* Elegant serif font */
+    font-size: 1.5rem; /* Adjust text size */
+    color: #fff; /* White text color */
+    background: linear-gradient(135deg, #FF8C00, #FFD700); /* Vibrant gradient background */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 20px; /* Padding around the text */
+    border: 2px solid #FFD700; /* Gold border for a luxurious feel */
+    border-radius: 12px; /* Rounded corners for smooth design */
+    display: inline-block; /* Ensures the text appears as a block */
+    text-align: center; /* Centers the text */
+    transition: transform 0.3s ease, background 0.3s ease; /* Smooth hover effects */
+}
+/* Video container styles */
+/* Video container styles */
+.MainVid {
+    position: relative;
+    width: 100%; /* Ensure it takes up the full width */
+    height: 100vh; /* Full viewport height for the video */
+    max-height: 854.5px; /* Max height for responsiveness */
+    display: flex;
+    justify-content: center; /* Centers the video horizontally */
+    align-items: center; /* Centers the video vertically */
+    overflow: hidden; /* Ensures no overflow */
+}
+
+/* Video element styling */
+#video {
+    width: 100%; /* Ensures the video fills the container */
+    height: 100%; /* Ensures the video fills the container */
+    object-fit: cover; /* Ensures the video covers the container without stretching */
+    object-position: center; /* Keeps the video centered */
+}
+
+/* Video overlay container */
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 1; /* Keeps the overlay above the video */
+}
+
+/* Video title design */
+.video-title {
+    font-family: 'Georgia', serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background: linear-gradient(90deg, #FFD700, #FF8C00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite;
+}
+
+
+/* Highlight animation */
+@keyframes shine {
+    0% {
+        background-position: -100%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+/* Add animation to the title */
+/* Add animation to the video title */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Starts invisible */
+        transform: translateY(30px); /* Starts slightly below */
+    }
+    100% {
+        opacity: 1; /* Ends fully visible */
+        transform: translateY(0); /* Ends at its normal position */
+    }
+}
+
+/* Apply the animation to the video title */
+.video-title {
+    font-family: 'Georgia', serif; /* Elegant serif font */
+    font-size: 3rem; /* Adjust size */
+    text-transform: uppercase; /* Make text uppercase */
+    letter-spacing: 5px; /* Space between letters */
+    background: linear-gradient(90deg, #FFD700, #FF8C00); /* Gradient background */
+    -webkit-background-clip: text; /* Clip the gradient to the text */
+    -webkit-text-fill-color: transparent; /* Make the rest transparent */
+    animation: fadeIn 2s ease-out; /* Fade-in effect with smooth transition */
+    animation-delay: 0.5s; /* Delay slightly after the page loads */
+}
+
+

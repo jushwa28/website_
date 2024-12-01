@@ -4,47 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="design_index.css">
-    <title>Luxe Orgnix</title>
+    <title>Luxe Organix</title>
 </head>
 <body>
+    <!-- Floating Logo -->
+    <div class="floating-logo">
+        <a href="index.html">
+            <img src="gr2.jpg" alt="Luxe Organix Logo">
+        </a>
+    </div>
 
     <script>
     function handleFeedbackClick() {
-    var feedback = confirm("Are you satisfied?");
-    Feedback(feedback);
+        var feedback = confirm("Are you satisfied?");
+        Feedback(feedback);
     }
-        function Feedback (feedback) {
+    function Feedback(feedback) {
         if (feedback == true) {
             alert("Thank you!");
         } else {
-            alert ("Thanks for visiting!");
+            alert("Thanks for visiting!");
         }
-        }
+    }
     </script>
 
-<!-- NAVIGATION -->
+    <!-- NAVIGATION -->
     <div class="nav">
-                <ul class="navBar">
-                    <li id="logo">LOGO</li>
-                    <li id="title">Luxe Organix</li>
-                    <li id="home"><a href="index.html"><img src="home.png" alt="home" height="27px" width="25px"></a> </li>
-                    <li id="aboutUs"><a href="aboutUs.html"><img src="information.png" alt="about us" height="27px" width="25px"></a> </li>
-                </ul>
-    </div> 
+        <ul class="navBar">
+            <li id="logo">LOGO</li>
+            <li id="title">Luxe Organix</li>
+            <li id="home"><a href="index.html"><img src="home.png" alt="home" height="27px" width="25px"></a></li>
+            <li id="aboutUs"><a href="aboutUs.html"><img src="information.png" alt="about us" height="27px" width="25px"></a></li>
+        </ul>
+    </div>
 
-<!-- VIDEOS -->
-    <center>
+  <!-- VIDEOS -->
+<!-- VIDEO -->
+<center>
     <div class="MainVid">
         <video id="video" loop autoplay muted playsinline>
             <source src="video.mp4" type="video/mp4">
         </video>
-    </div>  
-    </center>
+        <div class="video-overlay">
+            <h1 class="video-title">LUXE ORGANIX</h1> <!-- Title with animation -->
+        </div>
+    </div>
+</center>
 
-<!-- 2ND SECTION -->
-<div class="secondSection">
-    <p class="subtitle" center>Elevate your everyday beauty routine with nature's finest active ingredients, where radiant skin meets luxurious self-care transform your rituals into moments of pure indulgence.</p>
-    <div class="box-container">
+
+
+    <!-- 2ND SECTION -->
+    <div class="secondSection">
+        <p class="subtitle" center>
+            <span class="highlighted-text">Elevate your everyday beauty routine with nature's finest active ingredients, where radiant skin meets luxurious self-care transform your rituals into moments of pure indulgence.</span>
+        </p>
+        
+        <div class="box-container">
             <div class="box">
                 <a href="cleanser.html">
                     <img src="cleanser.jpg" alt="Image 1">
@@ -69,28 +84,26 @@
                     <p class="moisturizer">moisturizer</p>
                 </a>
             </div>
-            </div>
         </div>
-</div>
-
-<!-- FOOTER -->
-
-<div class="footer">
-    <div class="lineOne">
-    <h1 class="footer-title">Luxe Organix</h1> 
-    <a class="feedback" onclick="handleFeedbackClick()">Feedback</p>
     </div>
-    <div class="social-icons">
-        <a href="link" target="_blank">
-            <img src="facebook.png" alt="Facebook" width="35px" height="35px">
-        </a>
-        <a href="link" target="_blank">
-            <img src="instagram.png" alt="Instagram" width="35px" height="35px">
-        </a>
-        <a href="link" target="_blank">
-            <img src="tiktok.png" alt="TikTok" width="35px" height="35px">
-        </a>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="lineOne">
+            <h1 class="footer-title">Luxe Organix</h1>
+            <a class="feedback" onclick="handleFeedbackClick()">Feedback</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/luxeorganixph" target="_blank">
+                <img src="facebook.png" alt="Facebook" width="35px" height="35px">
+            </a>
+            <a href="https://www.instagram.com/luxeorganixph/" target="_blank">
+                <img src="inst.png" alt="Instagram" width="35px" height="35px">
+            </a>
+            <a href="https://www.tiktok.com/@luxeorganixph" target="_blank">
+                <img src="tiktok.jpg" alt="TikTok" width="35px" height="35px">
+            </a>
+        </div>
     </div>
-</div>
 </body>
 </html>

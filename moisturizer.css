@@ -121,6 +121,24 @@ nav + table {
 #home, #aboutUs {
     margin-right: 15px;
 }
+/* Floating logo styling */
+.floating-logo {
+    position: fixed; /* Keeps it in place while scrolling */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    z-index: 1000; /* Ensures it stays above other elements */
+}
 
+.floating-logo img {
+    width: 60px; /* Adjust logo size */
+    height: auto;
+    border-radius: 50%; /* Optional: make the logo circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for better visibility */
+    transition: transform 0.3s ease;
+}
+
+.floating-logo img:hover {
+    transform: scale(1.1); /* Slight zoom on hover for interactivity */
+}
 
 

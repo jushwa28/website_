@@ -8,6 +8,12 @@
 </head>
 <body>
 <script src="script.js"></script>
+<!-- Floating Logo -->
+<div class="floating-logo">
+    <a href="index.html">
+        <img src="gr2.jpg" alt="Luxe Organix Logo">
+    </a>
+</div>
 
 <!-- NAVIGATION -->
     <div class="nav">
@@ -35,7 +41,13 @@
                 <h1 class="title">Cleanser</h1>
 
                 <!-- GET BUTTON -->
-                <button type="submit" id="getBtn">Get</button>
+                <button type="submit" id="getBtn" onclick="redirectToCart()">Get</button>
+
+<script>
+    function redirectToCart() {
+        window.location.href = "cart.html";
+    }
+</script>
 
                 <!-- DETAILS -->
                 <div class="details">
