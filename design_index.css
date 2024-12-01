@@ -1,8 +1,15 @@
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+/* Apply this class to the body */
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #A460ED, #9fc9f3,  #EEEEEE); 
     min-height: 100vh;
     margin: auto;
+    animation: fadeIn 2s ease-out forwards;
 }
 
 /* NAV */
