@@ -69,11 +69,33 @@
                             Tocopheryl Acetate, Glycyrrhiza Glabra (Licorice) Root Extract, Eucalyptus Globulus Leaft Extract, Laurus Nobilis Leaf Extract, <br>
                             Phenoxyethanol Citronellol, Limonene Linalool.
                     </p>
+                    <h3>Caution</h3> 
+                    <p>
+                        13 years old and above may use this product
+                    </p>
+                    <p> For external use only. Avoid contact with eyes. Conduct a skin test first. Stop using and consult a doctor if skin becomes red, <br>
+                        swollen and itchy during use. Keep out of reach of children. Store at room temperature</p>
                 </div>
             </div>
         </th>   
     </tr>
 </table> 
+
+<script>
+    function redirectToCart() {
+        window.location.href = "cart.html";
+    }
+
+    const imageSources = ["serum.jpg", "serum2.jpg", "serum3.jpg"]; 
+    let currentIndex = 0;
+
+    const sliderImage = document.getElementById("slider");
+
+    sliderImage.addEventListener("click", function () {
+        currentIndex = (currentIndex + 1) % imageSources.length; 
+        sliderImage.src = imageSources[currentIndex]; 
+    });
+</script>
 
 </body>
 </html>

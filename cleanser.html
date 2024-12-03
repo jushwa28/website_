@@ -68,11 +68,34 @@
                         PEG-100 Stearate, PEG-20M, Silica BHT, Galactomyces Ferment Filtrate, Ascorbic Acid, Caprylyl Glycol, Hydroxyacetophenone, 
                         Pentylene Glycol, 1,2-Hexanediol, Fragrance.
                     </p>
+                    
+                    <h3>Caution</h3> 
+                    <p>
+                        13 years old and above may use this product
+                    </p>
+                    <p> For external use only. Avoid contact with eyes. Conduct a skin test first. Stop using and consult a doctor if skin becomes red, <br>
+                        swollen and itchy during use. Keep out of reach of children. Store at room temperature</p>
                 </div>
             </div>
         </th>   
     </tr>
 </table> 
+
+<script>
+    function redirectToCart() {
+        window.location.href = "cart.html";
+    }
+
+    const imageSources = ["cleanser.jpg", "cleanser2.jpg", "cleanser3.jpg"]; 
+    let currentIndex = 0;
+
+    const sliderImage = document.getElementById("slider");
+
+    sliderImage.addEventListener("click", function () {
+        currentIndex = (currentIndex + 1) % imageSources.length; 
+        sliderImage.src = imageSources[currentIndex]; 
+    });
+</script>
 
 </body>
 </html>

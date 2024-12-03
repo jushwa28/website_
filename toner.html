@@ -68,11 +68,32 @@
                         Water, Alcohol Denat, 1,2-Hexanediol, Niacinamide, Arginine, Glycolic Acid, PEG-60 Hydrogenated Castor Oil, Butylene Glycol, 
                          Disodium EDTA, Salicylic Acid, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Gluconic Acid, Mandelic Acid, Lactobionic Acid, Sodium Hyroxide
                     </p>
+                    <h3>Caution</h3>
+                    <p>13 years old and above may use this product</p>
+                    <p>
+                        For external use only. Do not use on sensitive or problem areas of your skin such as open wounds
+                    </p>
                 </div>
             </div>
         </th>   
     </tr>
 </table> 
+
+<script>
+    function redirectToCart() {
+        window.location.href = "cart.html";
+    }
+
+    const imageSources = ["toner.jpg", "toner2.jpg", "toner3.jpg"]; 
+    let currentIndex = 0;
+
+    const sliderImage = document.getElementById("slider");
+
+    sliderImage.addEventListener("click", function () {
+        currentIndex = (currentIndex + 1) % imageSources.length; 
+        sliderImage.src = imageSources[currentIndex]; 
+    });
+</script>
 
 </body>
 </html>

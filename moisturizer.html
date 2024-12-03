@@ -66,11 +66,33 @@
                           Sodium Polyacrylate, Olea Europaea (Olive) Leaf Extract, Ascorbyl Glucoside, Zinc PCA, PEG-40 Hydrogenated Castor oil, Dimethiconol, <br>
                            Hydroxyacetophenone, Disodium EDTA, 1,2-Hexanediol, Fragrance
                     </p>
+                    <h3>Caution</h3> 
+                    <p>
+                        13 years old and above may use this product
+                    </p>
+                    <p> Keep out of reach of children. Avoid contact with the eyes. If contact occurs rinse immediately with water. <br>
+                         If any irritation occurs dicontinue use and consult a doctor if necessary.</p>
                 </div>
             </div>
         </th>   
     </tr>
 </table> 
+
+<script>
+    function redirectToCart() {
+        window.location.href = "cart.html";
+    }
+
+    const imageSources = ["gel.jpg", "gel2.jpg", "gel3.jpg"]; 
+    let currentIndex = 0;
+
+    const sliderImage = document.getElementById("slider");
+
+    sliderImage.addEventListener("click", function () {
+        currentIndex = (currentIndex + 1) % imageSources.length; 
+        sliderImage.src = imageSources[currentIndex]; 
+    });
+</script>
 
 </body>
 </html>
